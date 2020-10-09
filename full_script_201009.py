@@ -62,15 +62,15 @@ if FLAGS.freeze not in ("deep", "shallow", ):
     
 if FLAGS.data == "local":
     if FLAGS.target=="alzheimer":
-        FLAGS.data = r"C:\Users\admin\Documents\BigDataPTA\geriatrie\dm\data\v3_alzh\data"
+        FLAGS.data = "../data/v3_alzh/data"
     elif FLAGS.target=="cells":
-        FLAGS.data = r"C:\Users\admin\Documents\BigDataPTA\geriatrie\dm\data\v3_class\data"
+        FLAGS.data = "../data/v3_class/data"
     elif FLAGS.target=="patient":
-        FLAGS.data = r"C:\Users\admin\Documents\BigDataPTA\geriatrie\dm\data\v3_patient\data"
+        FLAGS.data = "../data/v3_patient/data"
     elif FLAGS.target=="ppf":
-        FLAGS.data = r"C:\Users\admin\Documents\BigDataPTA\geriatrie\dm\data\v3_ppf\data"
+        FLAGS.data = "../data/v3_ppf/data"
 if FLAGS.output == "local":
-    FLAGS.output = r"C:\Users\admin\Documents\BigDataPTA\geriatrie\dm\out"
+    FLAGS.output = "../out"
 
 # defining initial parameters and loading the number and names of classes
 IM_WIDTH = 360
@@ -1276,6 +1276,6 @@ elif FLAGS.step == "augmentation_demo":
             plt.axis('off')
         plt.show()
         plt.tight_layout()
-        filepath = r"C:\Users\admin\Documents\BigDataPTA\geriatrie\dm\out\images\aug_demo"
+        filepath = "../out/images/aug_demo"
         filename = os.path.join(filepath,"{}.png".format(len(os.listdir(filepath))+1))
         plt.savefig(filename)
