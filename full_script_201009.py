@@ -2,7 +2,7 @@
 """
 Created on Sat May 30 12:10:42 2020
 
-@author: admin
+@author: Floris Chabrun, CHU Angers, 49933 Angers Cedex 9, FRANCE
 """
 
 import argparse
